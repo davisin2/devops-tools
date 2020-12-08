@@ -72,7 +72,7 @@ class PipelineLibrary(object):
         """
         params = {"key1": "value1"}
         repo = GitRepo(params)
-        repo.clone("https://github.com/davisin2/devops-tools.git", "devops", branch = "main")
+        repo.clone("https://github.com/davisin2/devops-tools.git", "devops")
         # repo.clone("git@github.com:davisin2/devops-tools.git", "devops", branch = "main")
         os.chdir(os.getcwd() + "/devops")
         with open("new-file.txt", "w") as f:
